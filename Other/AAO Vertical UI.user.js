@@ -84,8 +84,18 @@
 	    position: relative;
 	    height: 100%;
 	    width: 100%;
+    }
 
-	    left: -40px;
+    .display_engine_screen > .viewport
+    {
+      position: relative;
+      overflow: hidden;
+      left: -40px;
+    }
+
+    [id|=screen] {
+      background: red;
+      box-shadow: 0 0 3px black;
     }
 
 	`;
