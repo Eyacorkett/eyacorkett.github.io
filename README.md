@@ -1,35 +1,3 @@
-# Ace Attorney Tier List Maker
+# eyacorkett.github.io
 
-This is a fork from https://github.com/octopath-tier-list-maker/octopath-tier-list-maker.github.io, which is a fork of https://github.com/fe-tier-list-maker/fe-tier-list-maker.github.io, which itself was forked from https://github.com/quetzle/smash-apps (long lineage)
-
-This is a tier list maker primarily for characters in the Ace Attorney series, ranging from the very first game, *Phoenix Wright: Ace Attorney*, to the current final entry, *Phoenix Wright: Ace Attorney - Spirit of Justice*. It also includes characters from the *Ace Attorney Investigations* duology, *The Great Ace Attorney* duology, and *Ghost Trick: Phantom Detective*.
-
-In addition, the tier list also has characters from the fangames *Trials after Justice* and *Contempt of Court*, as well as the *Ace Attorney*-inspired visual novel *Tyrion Cuthbert: Attorney of the Arcane*.
-
-Please review the [contribution guide](https://github.com/aa-tier-list-maker/aa-tier-list-maker.github.io/blob/master/CONTRIBUTING.md) if you want to add/modify mugshots or functionality.
-
-## How to make your own Tier List Maker
-
-It took me (and the developers of the Octopath tier list) many hours to understand the logic of the project, but we did genuinely saw a lot of potential in how it was built. That's why I would love to see more franchises going more grassroots and start their own tier list maker project, like I have for Ace Attorney. Seeing how the original source material was lacking in an explanation of the structure of the project, I shall explain the following so that (hopefully) everyone should be able to pick this up as quickly as possible:
-
-The structure is as followed:
-- Folder = **editableJs**: you will be updating the content of this folder a lot, so it's pleasant to have these js files be separate from the others that you won't touch.
-    - **common.js**: primarily used to update the list of games that can be shown. variable ``imgGamesFolder`` has three values per game; the name of the folder that has all the images in the ``img`` folder, the amount of images it has and the name that users will be able to read on the website.
-    - **tags.js**: mostly optional, but can be used for filtering purposes, as the code supports this. in const ``imgTags``, you can give characters from individual games the established tags. The int at the beginning has to match with the number of the image that has been given in the ``img/[game]`` folder.
-- Folder = **img**: Relatively simple in the way it's set. You create a parent folder (f.e. the franchise) and then create individual folders per game in which you can put the characters. These images do have to be numbered so that the code can find and tag them properly. Don't forget to add these folders to the ``common.js`` file.
-- Folder = **lib**: Contains the libraries used in the project and are not required for the project to work on other games.
-- Folder = **nav**: Contains more libraries that are not relevant for the project as is.
-- **index.html**: Contains the page information. The information that needs to be changed for other projects is within the ``<head>`` tag. This tag contains information like the link preview description and image used. It also contains the page title and icon information. Change the urls where neccesary and update the images in the ``img`` folder to your game to make it more accurate to what your franchise represents. You can change which games are toggled on by default in here.
-
-## Small notice
-The original Fire Emblem fork also contained many more functionalities that might pique the interest of some people. This includes charts and venn diagrams for the characters. They have been ommitted from this project out of simplicity, but please consider taking a look at https://github.com/fe-tier-list-maker/fe-tier-list-maker.github.io if you want to know more.
-
-## Wishes to add or improve:
-Filter options:
-1. Male/Female
-2. Role (prosecutor, defense attorney, victim, culprit, defendant, witness)
-3. Appears in which games?
-
-Spoiler filtering option (needs custom code)
-
-Game tier list option
+Currently in renovation
